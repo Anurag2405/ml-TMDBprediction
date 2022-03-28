@@ -84,40 +84,29 @@
 
                 <div class="m-3">
                     <label for="release_year" class="form-label lead">Enter the release Year of the movie: </label>
-                    <input type="text" class="form-control" id="release_year" name="release_year">
+                    <input type="number" class="form-control" id="release_year" name="release_year">
                 </div>
 
 
                 <div class="m-3">
                     <label for="release_dayofweek" class="form-label lead">Enter the release day of week of the movie:
                     </label>
-                    <input type="text" class="form-control" id="release_dayofweek" name="release_dayofweek">
+                    <input type="number" class="form-control" id="release_dayofweek" name="release_dayofweek">
                 </div>
 
-
-
-
-                <select class="form-select" aria-label="Default select example" required name="release_quarter"
-                    id="release_quarter">
-                    <option selected>Select Quarter</option>
-                    <option value="1">First</option>
-                    <option value="2">Second</option>
-                    <option value="3">Third</option>
-                    <option value="4">Fourth</option>
-                </select>
 
                 <select class="form-select my-3" aria-label="Default select example" required name="is_released"
                     id="is_released">
                     <option selected>Is the movie released?</option>
                     <option value="1">Yes</option>
-                    <option value="2">No</option>
+                    <option value="0">No</option>
                 </select>
 
                 <select class="form-select my-3" aria-label="Default select example" required name="has_homepage"
                     id="has_homepage">
-                    <option selected>Is the movie having a webpage?</option>
+                    <option selected>The movie has a webpage?</option>
                     <option value="1">Yes</option>
-                    <option value="2">No</option>
+                    <option value="0">No</option>
                 </select>
 
 
@@ -125,7 +114,7 @@
                     id="has_a_tagline">
                     <option selected>Does the movie has a tagline?</option>
                     <option value="1">Yes</option>
-                    <option value="2">No</option>
+                    <option value="0">No</option>
                 </select>
 
 
@@ -133,20 +122,20 @@
                     id="originallang_en">
                     <option selected>Is the original language English?</option>
                     <option value="1">Yes</option>
-                    <option value="2">No</option>
+                    <option value="0">No</option>
                 </select>
 
                 <select class="form-select my-3" aria-label="Default select example" required name="has_collection"
                     id="has_collection">
                     <option selected>Does the movie belong to a Collection?</option>
                     <option value="1">Yes</option>
-                    <option value="2">No</option>
+                    <option value="0">No</option>
                 </select>
 
 
                 <div class="m-3 ">
-                    <label for="release_dayofweek" class="form-label lead">Enter the Number of Genres: </label>
-                    <input type="number" class="form-control" id="release_dayofweek" name="release_dayofweek">
+                    <label for="num_genres" class="form-label lead">Enter the Number of Genres: </label>
+                    <input type="number" class="form-control" id="num_genres" name="num_genres">
                 </div>
 
                 <div class="text-center m-3">

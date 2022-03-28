@@ -11,8 +11,19 @@ def hello_world():
         runtime = request.form['runtime']
         release_quarter = request.form['release_quarter']
         release_month = request.form['release_month']
-        data = pd.DataFrame({"budget":budget,"populatiry":populatiry})
-        print(data["budget"])
+        release_day = request.form['release_day']
+        release_year = request.form['release_year']
+        release_dayofweek = request.form['release_dayofweek']
+        is_released = request.form['is_released']
+        has_homepage = request.form['has_homepage']
+        has_a_tagline = request.form['has_a_tagline']
+        originallang_en = request.form['originallang_en']
+        has_collection = request.form['has_collection']
+        num_genres = request.form['num_genres']
+        print(has_a_tagline)
+        print(type(has_a_tagline))
+        # data = pd.DataFrame({"budget":budget,"populatiry":populatiry})
+        # print(data["budget"])
     return render_template('index.html')
 
 
