@@ -1,18 +1,16 @@
 from flask import Flask, redirect, render_template, request
 import pandas as pd
-import requests
-import pickle
 import numpy as np
-import sklearn
-from sklearn.preprocessing import StandardScaler
-import xgboost
+import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('proj.pkl', 'rb'))
-
+with open('data.pickle', 'rb') as f:
+    data = pickle.load(f)
+model = data
 @app.route("/", methods = ['GET','POST'])
 def hello_world():
     if request.method == 'POST':
+        # getting the input from the form
         budget = float(request.form['budget'])
         populatiry = float(request.form['populatiry'])
         runtime = float(request.form['runtime'])
@@ -27,17 +25,35 @@ def hello_world():
         originallang_en = int(request.form['originallang_en'])
         has_collection = int(request.form['has_collection'])
         num_genres = int(request.form['num_genres'])
-        # data = pd.DataFrame({"budget":budget,"populatiry":populatiry})
-        # print(data["budget"])
-        prediction=model.predict([[]])
-        output=round(prediction[0],2)
+    
+        # creating a dataframe from which will be an input to the model
+        new_input = {
+            'budget': budget,
+            'populatiry': populatiry,
+            'runtime': runtime,
+            'release_month': release_month,
+            'release_day': release_day,
+            'release_year': release_year,
+            'release_dayofweek': release_dayofweek,
+            'release_quarter':release_quarter,
+            'is_released':is_released,
+            'has_homepage':has_homepage,
+            'has_a_tagline':has_a_tagline,
+            'originallang_en':originallang_en,
+            'has_collection':has_collection,
+            'num_genres':num_genres,
+        }
+        new_input_df = pd.DataFrame([new_input])
+        # predicting the value
+        prediction = model.predict(new_input_df)
+        # print(np.expm1(prediction[0]))
+        output= np.expm1(prediction[0])
         if output<0:
             return render_template('index.html',prediction_texts="Sorry prediction not available")
         else:
-            return render_template('index.html',prediction_text="You Can Sell The Car at {}".format(output))
+            return render_template('index.html',prediction_text="The predicted revenue is {}".format(output))
     else:
         return render_template('index.html')
-    # return render_template('index.html')
 
 
 if __name__ == "__main__":
