@@ -13,9 +13,9 @@
 ## Demo
 Link: [http://anurag-tmdbprediction.herokuapp.com/](http://anurag-tmdbprediction.herokuapp.com/)
 
-[![](https://i.imgur.com/3OyNtUI.png)]
+![](https://i.imgur.com/3OyNtUI.png)
 
-[![](https://i.imgur.com/5tEsR4j.png)]
+![](https://i.imgur.com/5tEsR4j.png)
 
 ## Overview
 This is a Flask web app which predicts Box office revenue of movies.
