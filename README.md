@@ -46,11 +46,16 @@ Our next step would be to follow the instruction given on [Heroku Documentation]
 ```
 
 ## Technologies Used
-
-![](https://forthebadge.com/images/badges/made-with-python.svg)
-
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
-
+<h3> Tools used for project development: </h3>
+<ul>
+<li><p><b>Python ( 3.7 version)</b></p></li>
+<li><p><b>Flask</b></p></li>
+<li><p><b>Scikit learn</b></p></li>
+<li><p><b>Pandas</b></p></li>
+<li><p><b>Numpy</b></p></li>
+<li><p><b>HTML</b></p></li>
+<li><p><b>Bootstrap</b></p></li>
+</ul>
 
 ## Future Scope
 
