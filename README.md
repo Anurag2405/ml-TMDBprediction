@@ -7,6 +7,7 @@
   * [Installation](#installation)
   * [Deployement on Heroku](#deployement-on-heroku)
   * [Directory Tree](#directory-tree)
+  * [Technologies Used](#technologies-used)
   * [Future scope of project](#future-scope)
 
 
@@ -46,20 +47,17 @@ Our next step would be to follow the instruction given on [Heroku Documentation]
 ```
 
 ## Technologies Used
-<h3> Tools used for project development: </h3>
-<ul>
-<li><p><b>Python ( 3.7 version)</b></p></li>
-<li><p><b>Flask</b></p></li>
-<li><p><b>Scikit learn</b></p></li>
-<li><p><b>Pandas</b></p></li>
-<li><p><b>Numpy</b></p></li>
-<li><p><b>HTML</b></p></li>
-<li><p><b>Bootstrap</b></p></li>
-</ul>
+* Python
+* flask
+* Pandas
+* Scikit learn
+* numpy
+* seaborn
+* bootstrap
+* html
 
 ## Future Scope
 
 * Use multiple Algorithms
-* Optimize Flask app.py
 * Front-End
 * Creating an API to directly use the model
