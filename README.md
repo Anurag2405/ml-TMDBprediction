@@ -1,5 +1,4 @@
 # TMDB BOX Office prediction:
-# Flight Fare Prediction: 
 
 ## Table of Content
   * [Demo](#demo)
